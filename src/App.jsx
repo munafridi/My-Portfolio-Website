@@ -1,5 +1,7 @@
 import './App.css'
 
+const portraitSrc = `${import.meta.env.BASE_URL}images/muneeb-profile.jpg`
+
 const skills = [
   { group: '01', name: 'Core web', items: ['HTML', 'CSS', 'JavaScript'] },
   { group: '02', name: 'Framework', items: ['React'] },
@@ -68,7 +70,7 @@ function App() {
       <main>
         <section className="hero" id="home">
           <div className="hero-side">
-            <div className="portrait-card"><img src="/images/muneeb-profile.jpg" alt="Muneeb seated outdoors in the evening" /><span className="portrait-caption">MUNEEB · FRONTEND DEVELOPER</span></div>
+            <div className="portrait-card"><img src={portraitSrc} alt="Muneeb seated outdoors in the evening" /><span className="portrait-caption">MUNEEB · FRONTEND DEVELOPER</span></div>
             <a className="github-link" href="https://github.com/munafridi" target="_blank" rel="noreferrer"><span className="github-mark">GH</span> GitHub profile <span className="external-arrow">↗</span></a>
           </div>
           <div className="hero-main">
